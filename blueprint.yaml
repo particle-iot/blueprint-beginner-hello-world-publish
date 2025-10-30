@@ -1,0 +1,42 @@
+slug: blueprint-beginner-hello-world-publish
+type: Tutorial
+category: "Cloud Basics"
+expertiseLevel: "Beginner"
+tags: ["Publish", "Function", "Console"]
+icon: assets/hero.jpg
+gitrepo: https://github.com/<your-org>/blueprint-beginner-hello-world-publish
+name: "Hello World Publish"
+shortDescription: "Publish a Hello World event from your Particle device when a cloud function is called."
+version: 1.0.0
+models: []
+language: ["C++"]
+cloudServices: []
+integrations: []
+supportedDevices:
+  - name: Any Wi-Fi or Cellular Device
+    link: https://docs.particle.io
+webIdeLink:
+webSetupLink:
+hardwareDependencies:
+  - name: Supported Particle device
+  - name: USB cable
+introduction: |
+  This beginner-friendly blueprint demonstrates how to use Particle Cloud functions
+  to trigger a "Hello World" publish event. It’s a minimal and reliable way to
+  confirm your device is connected and responding to cloud commands.
+description: |
+  The firmware registers a cloud function called `sayHello`. When the function
+  is invoked from the Console or API, the handler publishes an event called
+  `hello_world` to the Particle Cloud. This event is visible under Logs in
+  the Console and can be consumed by integrations, webhooks, or other devices.
+
+  It’s an excellent first step for learning how to build connected projects using
+  Particle’s cloud APIs and real-time device communication.
+
+additionalResources:
+  - title: Particle Publish Reference
+    link: https://docs.particle.io/reference/device-os/firmware/#particle-publish-
+  - title: Particle Function Reference
+    link: https://docs.particle.io/reference/device-os/firmware/#particle-function-
+  - title: Particle Workbench Setup Guide
+    link: https://docs.particle.io/workbench/
