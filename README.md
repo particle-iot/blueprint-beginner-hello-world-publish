@@ -52,7 +52,7 @@ It’s the ideal first step for understanding how Particle devices communicate w
 ---
 
 ## Source Code
-The main firmware is located in [`firmware\blueprint-begineer-hello-world-publish\src\hello-world-publish.cpp`](firmware\blueprint-begineer-hello-world-publish\src\hello-world-publish.cpp).  
+The main firmware is located in [`/src/hello-world-publish.cpp`](/src/hello-world-publish.cpp).  
 It’s fully commented to explain how the cloud function and publish mechanism work.
 
 ---
