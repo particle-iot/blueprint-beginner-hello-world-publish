@@ -26,7 +26,10 @@ SYSTEM_MODE(AUTOMATIC);
 // Run application and system code concurrently in separate threads.
 // This keeps the device responsive to OTA updates and cloud events
 // even if your loop() has delays or long-running logic.
-SYSTEM_THREAD(ENABLED);
+
+#ifndef SYSTEM_VERSION_v620
+SYSTEM_THREAD(ENABLED); // System thread defaults to on in 6.2.0 and later and this line is not required
+#endif
 
 // Configure logging over USB serial for debugging and visibility.
 // Open terminal with: particle serial monitor --follow
@@ -85,7 +88,7 @@ int sayHelloHandler(String command) {
     // Publish an event to the Particle Cloud.
     // The event name is "hello_world" and the data is "Hello from Particle!".
     // The PRIVATE flag ensures the event is not visible to the public event stream.
-    Particle.publish("hello_world", "Hello from Particle!", PRIVATE);
+    Particle.publish("hello_world", "Hello from Particle!");
 
     // Log for local visibility over serial
     Log.info("Published 'hello_world' event to the cloud.");
