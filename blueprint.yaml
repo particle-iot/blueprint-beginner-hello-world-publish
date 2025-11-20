@@ -3,7 +3,7 @@ type: Tutorial
 category: "Cloud Basics"
 expertiseLevel: "Beginner"
 tags: ["Publish", "Function", "Console"]
-icon: assets/hero.jpg
+icon: assets/hello-world.svg
 gitrepo: https://github.com/<your-org>/blueprint-beginner-hello-world-publish
 name: "Hello World Publish"
 shortDescription: "Publish a Hello World event from your Particle device when a cloud function is called."
